@@ -197,14 +197,9 @@ iframe {
   opacity: 0.5;
 }
 
-/* .menu-menu {
-  position: absolute;
-  height: 75px;
-  width: 100px;
-  bottom: 0px;
-  right: 10px;
-  display: inline-block;
-} */
+.menu-menu li {
+
+}
 
 
 @media (max-width: 991px) {
