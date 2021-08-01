@@ -56,6 +56,13 @@ header .logo {
   width: 200px;
 }
 
+/* video */
+iframe {
+  position: absolute;
+  right: 75px;
+  bottom: 40px;
+}
+
 /* Toggling Menu Icon */
 .toggle {
   position: relative;
