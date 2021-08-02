@@ -68,7 +68,7 @@ nav {
 nav.nav-open {
   transform: translateX(0px);
   border-radius: 0% 0% 0% 0%;
- background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 nav .menu-btn {
@@ -141,6 +141,7 @@ nav .nav-links {
 nav .nav-links.fade-in {
   opacity: 1;
   transform: translateX(0px);
+  background-color: #FF671F;
 }
 
 nav .nav-links .link {
@@ -158,40 +159,8 @@ nav .nav-links .link:hover {
   color: rgba(0, 0, 0, .5);
 }
 
-.inform {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: rgba(255, 255, 255, 0.8);
-font-size: 2rem;
-font-family: sans-serif;
-text-transform: uppercase;
-letter-spacing: 5px;
-text-shadow: 0 0 20px rgba(0,0,0,0.6);
-}
-
-.support {
-position: absolute;
-right: 10px;
-bottom: 10px;
-padding: 10px;
-display: flex;
-}
-
-a {
-margin: 0 20px;
-color: #fff;
-font-size: 2rem;
-transition: all 400ms ease;
-}
-
-a:hover{
-color: #222;
-}
-
 /* Main Title */
-.info-text {
+.info-text-bg {
   position: absolute;
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
@@ -201,7 +170,7 @@ color: #222;
   box-shadow: 2px 3px rgba(255, 255, 255, .6)
 }
 
-.info-text h1 {
+.info-text-bg h1 {
   font-size: 3.5em;
   font-weight: 700;
   color: #fff;
@@ -209,7 +178,7 @@ color: #222;
   text-transform: uppercase;
 }
 
-.info-text p {
+.info-text-bg p {
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
@@ -218,7 +187,7 @@ color: #222;
 }
 
 /* CTA Botton */
-.info-text a {
+.info-text-bg a {
   display: inline-block;
   font-size: 1em;
   background: #FF671F;
@@ -269,7 +238,7 @@ color: #222;
 }
 
 /* Menu */
-.menu-logo {
+.nav-logo {
   position: absolute;
   height: 75px;
   width: 100px;
@@ -278,23 +247,11 @@ color: #222;
   opacity: 0.5;
 }
 
-.menu-menu {
+.misc-menu {
   position: absolute;
   display: block;
   bottom: 10px;
   right: 10px
-}
-
-@media (max-width: 991px) {
-  .main-description,
-  .main-description header
-  {
-    padding: 40px;
-  }
-
-  .info-text h1 {
-    font-size: 3em;
-  }
 }
 
 /* PAGE 2 */
