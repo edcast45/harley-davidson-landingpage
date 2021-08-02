@@ -7,18 +7,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
 /* Background */
-#main-description {
+#page1 {
   background-image: url('Fatboy 1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: absolute;
   height: 100vh;
   z-index: 1;
 }
 
-/* Main Page Info */
-.main-description {
+/* Page 1 */
+.page {
   position: absolute;
   left: 0;
   width: 100%;
@@ -27,29 +34,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
   transition: 0.5s;
   z-index: 2;
-  overflow: hidden;
 }
 
-.main-description.active {
-  left: 300px;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
+/* Harley Davidson Logo */
+.logo {
   position: absolute;
   right: 75px;
   top: 30px;
@@ -64,26 +54,143 @@ iframe {
   bottom: 40px;
 }
 
-/* Toggling Menu Icon */
-.toggle {
+/* Nav */
+nav {
+  overflow: hidden;
   position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
+  transform: translateX(-300px);
+  height: 100%;
+  width: 400px;
+  transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+  border-radius: 0% 0% 100% 50%;
 }
 
-.toggle.active {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
+nav.nav-open {
+  transform: translateX(0px);
+  border-radius: 0% 0% 0% 0%;
+ background: rgba(255, 255, 255, 0.6);
 }
 
+nav .menu-btn {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  padding: 0;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+nav .menu-btn .line {
+  padding: 0;
+  width: 30px;
+  background: #fff;
+  height: 2px;
+  margin: 5px 0;
+  transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+  width: 30px;
+  transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+  width: 30px;
+  transform: rotate(45deg) translateY(10px);
+ background: rgba(0,0,0,0.6);
+}
+
+nav .menu-btn .line.line--2 {
+  width: 28px;
+  transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+  width: 28px;
+  transform: translate(30px);
+  opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+  width: 20px;
+  transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+  width: 30px;
+  transform: rotate(-45deg) translateY(-10px);
+ background: rgba(0,0,0,0.6);
+}
+
+nav .nav-links {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links.fade-in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+nav .nav-links .link {
+  margin: 20px 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.9);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links .link:hover {
+  color: rgba(0, 0, 0, .5);
+}
+
+.inform {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgba(255, 255, 255, 0.8);
+font-size: 2rem;
+font-family: sans-serif;
+text-transform: uppercase;
+letter-spacing: 5px;
+text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.support {
+position: absolute;
+right: 10px;
+bottom: 10px;
+padding: 10px;
+display: flex;
+}
+
+a {
+margin: 0 20px;
+color: #fff;
+font-size: 2rem;
+transition: all 400ms ease;
+}
+
+a:hover{
+color: #222;
+}
+
+/* Main Title */
 .info-text {
   position: absolute;
   z-index: 1;
@@ -110,6 +217,7 @@ iframe {
   max-width: 700px;
 }
 
+/* CTA Botton */
 .info-text a {
   display: inline-block;
   font-size: 1em;
@@ -125,7 +233,7 @@ iframe {
   border-radius: 5px;
 }
 
-.info-text a:hover {
+#info-text a:hover {
   letter-spacing: 6px;
 }
 
@@ -161,38 +269,6 @@ iframe {
 }
 
 /* Menu */
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FF671F;
-}
-
-.menu ul {
-  position: relative;
-}
-
-.menu ul li {
-  list-style: none;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-}
-
-.menu ul li a:hover {
-  color: #fff;
-  font-weight: bold;
-  transition: 0.4s;
-}
-
 .menu-logo {
   position: absolute;
   height: 75px;
@@ -209,7 +285,6 @@ iframe {
   right: 10px
 }
 
-
 @media (max-width: 991px) {
   .main-description,
   .main-description header
@@ -220,14 +295,11 @@ iframe {
   .info-text h1 {
     font-size: 3em;
   }
-
-  /* .info-text h3 {
-    font-size: 2em;
-  } */
 }
 
 /* PAGE 2 */
-#bike-images{
+#bike-images {
+  display: flex;
   background-color: #fff;
   height: 100vh;
   width: 100%;
