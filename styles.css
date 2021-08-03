@@ -259,6 +259,12 @@ nav .nav-links .link:hover {
 
 /* PAGE 2 */
 #page2 {
+  background-image: url(h-d-logo-shield.svg);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: center;
+  position: absolute;
+
   display: flex;
   background-color: #fff;
   height: 100vh;
@@ -269,4 +275,10 @@ nav .nav-links .link:hover {
   width: 800px;
   height: 500px;
   margin: auto;
+}
+
+/* PAGE 3 */
+#page3 {
+  display: flex;
+
 }
