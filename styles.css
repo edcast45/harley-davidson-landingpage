@@ -18,7 +18,7 @@ body {
 
 /* Background */
 #page1 {
-  background-image: url('Fatboy 1.jpg');
+  background-image: url('imgs/Fatboy 1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -280,5 +280,11 @@ nav .nav-links .link:hover {
 /* PAGE 3 */
 #page3 {
   display: flex;
+  background: #111;
+  height: 90vh;
+  width: 100%;
+}
 
+.bike-parts {
+  display: inline-block;
 }
