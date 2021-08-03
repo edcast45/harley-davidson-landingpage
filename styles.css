@@ -259,16 +259,24 @@ nav .nav-links .link:hover {
 
 /* PAGE 2 */
 #page2 {
-  background-image: url(h-d-logo-shield.svg);
-  background-repeat: no-repeat;
-  background-size: 900px;
-  background-position: center;
-  position: absolute;
-
+  position: relative;
   display: flex;
   background-color: #fff;
   height: 100vh;
   width: 100%;
+}
+
+#page2::before {
+  content: "";
+  background-image: url(imgs/h-d-logo-shield.svg);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 
 .carousel {
@@ -279,12 +287,22 @@ nav .nav-links .link:hover {
 
 /* PAGE 3 */
 #page3 {
+  position: relative;
   display: flex;
   background: #111;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
 .bike-parts {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.bike-parts img {
+  width: 75px;
+  height: 75px;
   display: inline-block;
+  margin-right: 50px;
 }
