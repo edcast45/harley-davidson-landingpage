@@ -292,17 +292,47 @@ nav .nav-links .link:hover {
   width: 100%;
 }
 
+/* Bike Specs Icons */
 .bike-parts {
   display: flex;
-  height: 80px;
+  height: 200px;
   width: 100%;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .bike-parts img {
   width: 75px;
   height: 75px;
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 40px;
+}
+
+/* Bike Images in columns */
+.container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.left-img {
+  display: flex;
+  width: 750px;
+  height: 450px;
+  margin-left: 75px;
+
+}
+
+.right-img {
+  display: flex;
+  width: 450px;
+  height: 300px;
 }
