@@ -325,8 +325,8 @@ nav .nav-links .link:hover {
 
 .left-img {
   display: flex;
-  width: 750px;
-  height: 425px;
+  width: 725px;
+  height: 400px;
   margin-left: 75px;
   margin-right: 10px;
 }
@@ -335,6 +335,15 @@ nav .nav-links .link:hover {
   display: block;
   width: 375px;
   height: 225px;
-  margin-left: 250px;
+  margin-left: 225px;
 }
 
+.price-bar {
+  position: absolute;
+  width: 700px;
+  height: 125px;
+  background-color: #fff;
+  z-index: 1;
+  bottom: 50px;
+  right: 15px;
+}
