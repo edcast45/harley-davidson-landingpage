@@ -373,9 +373,35 @@ nav .nav-links .link:hover {
 
 /* Page 4 */
 #page4 {
-  position: relative;
-  display: flex;
+  /* display: flex; */
   background: #EBEBEB;
   height: 100vh;
   width: 100%;
+}
+
+#row2 {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 100%;
+}
+
+.fbb {
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.h1-text {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 75px;
+}
+
+.text {
+  font-weight: lighter;
 }
