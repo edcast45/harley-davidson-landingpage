@@ -347,3 +347,26 @@ nav .nav-links .link:hover {
   bottom: 50px;
   right: 15px;
 }
+
+/* Purchase Bar */
+.row2 {
+  height: 125px;
+  padding-left: 50px;
+}
+
+.col-l,
+.col-r {
+  margin: auto;
+}
+
+/* Purchase Button */
+.btn {
+  background-color: #FF671F;
+  color: #fff;
+  border: #FF671F
+}
+
+.btn:hover {
+  background-color: #e05b1c
+}
+
