@@ -326,13 +326,15 @@ nav .nav-links .link:hover {
 .left-img {
   display: flex;
   width: 750px;
-  height: 450px;
+  height: 425px;
   margin-left: 75px;
-
+  margin-right: 10px;
 }
 
 .right-img {
-  display: flex;
-  width: 450px;
-  height: 300px;
+  display: block;
+  width: 375px;
+  height: 225px;
+  margin-left: 250px;
 }
+
