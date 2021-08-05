@@ -373,13 +373,14 @@ nav .nav-links .link:hover {
 
 /* Page 4 */
 #page4 {
-  /* display: flex; */
+  display: flex;
   background: #EBEBEB;
   height: 100vh;
   width: 100%;
 }
 
-#row2 {
+#row2,
+#row3 {
   display: flex;
 }
 
@@ -416,4 +417,12 @@ nav .nav-links .link:hover {
 #map {
   height: 200px;
   width: 700px;
+}
+
+/* Page 5 */
+#page5 {
+  display: flex;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
 }
