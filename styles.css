@@ -397,11 +397,23 @@ nav .nav-links .link:hover {
 }
 
 .h1-text {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  padding-top: 75px;
+  padding: 75px 0 25px 0;
+
 }
 
 .text {
   font-weight: lighter;
+  width: 550px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-bottom: 15px;
+}
+
+#map {
+  height: 200px;
+  width: 700px;
 }
