@@ -101,7 +101,7 @@ nav .menu-btn .line.line--1 {
 nav .menu-btn .line.line--1.line-cross {
   width: 30px;
   transform: rotate(45deg) translateY(10px);
- background: rgba(0,0,0,0.6);
+  background: #fff;
 }
 
 nav .menu-btn .line.line--2 {
@@ -123,7 +123,7 @@ nav .menu-btn .line.line--3 {
 nav .menu-btn .line.line--3.line-cross {
   width: 30px;
   transform: rotate(-45deg) translateY(-10px);
- background: rgba(0,0,0,0.6);
+  background: #fff;
 }
 
 nav .nav-links {
@@ -151,7 +151,7 @@ nav .nav-links .link {
   margin: 20px 0;
   text-decoration: none;
   font-family: sans-serif;
-  color: rgba(0,0,0,0.9);
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -159,7 +159,7 @@ nav .nav-links .link {
 }
 
 nav .nav-links .link:hover {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(225, 225, 225, 0.7);
 }
 
 /* Main Title */
@@ -243,18 +243,20 @@ nav .nav-links .link:hover {
 /* Menu */
 .nav-logo {
   position: absolute;
-  height: 75px;
-  width: 100px;
+  height: 100px;
+  width: 125px;
   bottom: 0px;
   left: 10px;
   opacity: 0.5;
 }
 
-.misc-menu {
+.misc-menu li {
   position: absolute;
-  display: block;
+  display: inline;
   bottom: 10px;
-  right: 10px
+  right: 10px;
+  list-style: none;
+  color: #fff;
 }
 
 /* PAGE 2 */
