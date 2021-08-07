@@ -497,3 +497,11 @@ nav .nav-links .link:hover {
   margin-left: 50px;
   margin-top: 50px;
 }
+
+/* FOOTER */
+footer {
+  position: relative;
+  background-color: #111;
+  width: 100%;
+  height: 250px;
+}
