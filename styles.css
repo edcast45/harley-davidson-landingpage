@@ -467,3 +467,10 @@ nav .nav-links .link:hover {
   -ms-transform: translateY(-80%);
   transform: translateY(30%);
 }
+
+.fbb2 {
+  width: 600px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
