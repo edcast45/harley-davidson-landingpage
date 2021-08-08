@@ -532,6 +532,7 @@ nav .nav-links .link:hover {
 .col-2 {
   text-align: center;
   padding-top: 25px;
+  padding-left: 15px;
 }
 
 .footer-social {
@@ -556,4 +557,8 @@ li {
 #hd-info li a {
   text-align: left;
   color: #bfbfbf;
+}
+
+form .btn {
+  margin: 0;
 }
