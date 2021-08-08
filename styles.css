@@ -518,3 +518,19 @@ nav .nav-links .link:hover {
   padding-top: 10px;
   text-align: center;
 }
+
+.footer-social {
+  position: absolute;
+  z-index: 10;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.col-2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
