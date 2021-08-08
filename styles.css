@@ -450,7 +450,7 @@ nav .nav-links .link:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: relative;
   display: flex;
   height: 100vh;
   width: 100%;
@@ -499,9 +499,11 @@ nav .nav-links .link:hover {
 }
 
 /* FOOTER */
-footer {
+#footer {
   position: relative;
   background-color: #111;
   width: 100%;
   height: 250px;
+  color: #bfbfbf;
+  margin: 0;
 }
