@@ -534,3 +534,21 @@ nav .nav-links .link:hover {
   padding-top: 25px;
 }
 
+.footer-social {
+  position: absolute;
+  z-index: 10;
+  bottom: 40px;
+  display: flex;
+  margin: 25px;
+}
+
+.footer-social .fab {
+  list-style: none;
+  color: #bfbfbf;
+  font-size: 40px;
+  margin: 10px;
+}
+
+li {
+  list-style-type: none;
+}
