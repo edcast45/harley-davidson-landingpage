@@ -552,3 +552,8 @@ nav .nav-links .link:hover {
 li {
   list-style-type: none;
 }
+
+#hd-info li a {
+  text-align: left;
+  color: #bfbfbf;
+}
