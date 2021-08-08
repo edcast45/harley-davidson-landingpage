@@ -276,7 +276,7 @@ nav .nav-links .link:hover {
   transform: scale(0.5) translateY(-15px);
 }
 
-.fas {
+.misc-menu .fas {
   font-size: 60px;
   color: #111;
 }
